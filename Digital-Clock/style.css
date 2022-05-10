@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Poppins:wght@200;300;400;500;600;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1546587348-d12660c30c50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80")
+        no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 15px;
+}
+
+.clock div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: lime;
+    width: 120px;
+    height: 100px;
+    box-shadow: 15px 15px 15px #222;
+}
+
+.clock div span {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.clock div .text {
+    background: lightgreen;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #222;
+    font-size: 16px;
+    padding: 8px;
+}
