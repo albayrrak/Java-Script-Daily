@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Poppins:wght@200;300;400;500;600;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: #cccc;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 70px);
+}
+
+.button {
+    background: lightgreen;
+    color: #111;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 5px 25px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: var(--yPos);
+    left: var(--xPos);
+    transform: translate(-50%, -50%);
+    background: lime;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+}
+
+.button:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.button span {
+    position: relative;
+    z-index: 12;
+}
