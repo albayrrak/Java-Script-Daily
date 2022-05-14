@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Poppins:wght@200;300;400;500;600;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+
+.box1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://barankaraboga.com/wp-content/uploads/2020/10/una-taza-de-javascript.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.box1 h1 {
+    font-size: 55px;
+    color: #fff;
+    text-shadow: 4px 4px 18px rgba(0, 0, 0, 0.9);
+}
+
+.increment-counter {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.increment-counter .counter-container {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.increment-counter .counter-container .counter-box {
+    display: flex;
+    flex-shrink: 0;
+    width: 150px;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #111;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 500ms linear;
+}
+
+.increment-counter .counter-container .counter-box:hover {
+    background: rgb(199, 0, 0);
+    transform: scale(1.1);
+}
+
+.increment-counter .counter-container .counter-box i {
+    font-size: 45px;
+    color: #fff;
+}
+
+.increment-counter .counter-container .counter-box h2 {
+    font-size: 45px;
+    color: #fff;
+}
+
+.increment-counter .counter-container .counter-box span {
+    font-size: 25px;
+    color: #fff;
+}
