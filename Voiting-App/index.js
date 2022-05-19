@@ -3,7 +3,7 @@ const team1 = document.querySelector('.team1')
 const team2 = document.querySelector('.team2')
 const homeTeam = document.getElementById('home-team')
 const awayTeam = document.getElementById('away-team')
-const voitingButtons = document.querySelectorAll('#voiting')
+const votingButtons = document.querySelectorAll('#voting')
 
 
 let homeTeamVotes = 0
@@ -16,10 +16,10 @@ team1.style.setProperty('--homeWidth', "50%")
 team2.style.setProperty('--awayWidth', "50%")
 
 // I create voting function
-voitingButtons.forEach((voiting, index) => {
+votingButtons.forEach((voting, index) => {
 
     // When the button is clicked
-    voiting.addEventListener("click", () => {
+    voting.addEventListener("click", () => {
 
         if (index === 0) {
             homeTeamVotes++
